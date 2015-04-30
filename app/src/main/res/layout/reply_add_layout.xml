@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/_1list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red">
+        <TextView
+            android:id="@+id/ms1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text="ข้อความที่1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/abc_btn_check_to_on_mtrl_015"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/abc_btn_radio_to_on_mtrl_000"/>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/_2list"
+        android:layout_below="@id/_1list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green">
+        <TextView
+            android:id="@+id/ms2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text="ข้อความที่2"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/abc_btn_check_to_on_mtrl_015"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/abc_btn_radio_to_on_mtrl_000"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/_3list"
+        android:layout_below="@id/_2list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange">
+        <TextView
+            android:id="@+id/ms3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text="ข้อความที่3"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/abc_btn_check_to_on_mtrl_015"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/abc_btn_radio_to_on_mtrl_000"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/_4list"
+        android:layout_below="@id/_3list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red">
+        <TextView
+            android:id="@+id/ms4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text="ข้อความที่4"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/abc_btn_check_to_on_mtrl_015"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/abc_btn_radio_to_on_mtrl_000"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/_5list"
+        android:layout_below="@id/_4list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green">
+        <TextView
+            android:id="@+id/ms5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text="ข้อความที่5"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/abc_btn_check_to_on_mtrl_015"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/abc_btn_radio_to_on_mtrl_000"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/_6list"
+        android:layout_below="@id/_5list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange">
+        <TextView
+            android:id="@+id/ms6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text="ข้อความที่6"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/abc_btn_check_to_on_mtrl_015"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/abc_btn_radio_to_on_mtrl_000"/>
+    </LinearLayout>
+
+</RelativeLayout>

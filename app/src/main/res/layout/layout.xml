@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Callsetting"
+            android:id="@+id/textView2"
+            android:layout_marginTop="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LightSensor"
+            android:id="@+id/switch1"
+            android:layout_marginTop="57dp"
+            android:checked="false"
+            android:layout_below="@+id/textView2"
+            android:layout_alignEnd="@+id/switch2" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RejectAll"
+            android:id="@+id/switch2"
+            android:layout_below="@+id/switch1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"
+            android:checked="false" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AnserAll"
+            android:id="@+id/switch3"
+            android:layout_centerVertical="true"
+            android:layout_alignEnd="@+id/switch2"
+            android:checked="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SetAnserAndReject"
+            android:id="@+id/button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/switch3" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ReplySetting"
+            android:id="@+id/button2"
+            android:layout_above="@+id/button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thesis.carhud.mangodrive_a1" >
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name=".SplashScreenControl" >
+
+        </activity>
+
+        <activity android:name=".CallPage" >
+            <intent-filter>
+
+                <action android:name="com.CallPage" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ClockPage" >
+            <intent-filter>
+                <action android:name="com.ClockPage" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MusicPage" >
+            <intent-filter>
+                <action android:name="com.MusicPage" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MapPage" >
+            <intent-filter>
+                <action android:name="com.MapPage" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ContactControl" >
+            <intent-filter>
+                <action android:name="com.ContactControl" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ContactControlReject" >
+            <intent-filter>
+                <action android:name="com.ContactControlReject" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FindLocationFromName">
+
+        </activity>
+        <activity android:name=".DirectionActivity1">
+
+        </activity>
+        <activity android:name=".Reply_ADD"></activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCCIJgatEtF9fvD-l9TkyyMWw9mqlrlaVw" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+        <receiver
+            android:name=".MainCallBroadcast"
+            android:process=":romote"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter android:priority="-1">
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="com.CallBroadcasting" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.thesis.carhud.mangodrive_a1.MusicService" />
+        <activity
+            android:name=".GetDataForMapActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+
+    </application>
+
+</manifest>

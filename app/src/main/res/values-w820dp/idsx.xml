@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="pic01" type="id"/>
+    <item name="ba" type="id"/>
+    <item name="br" type="id"/>
+    <item name="name" type="id"/>
+    <item name="number" type="id"/>
+    <item name="brp" type="id"/>
+    <item name="Replyt" type="id" />
+</resources>
