@@ -20,14 +20,9 @@ public class LightSensor extends Service {
     float xyz;
     float x=0,xd;
     boolean checkstate = false;
-
-
-
-
-
-
-    @Override
-    public void onCreate() {
+    
+@Override
+public void onCreate() {
         super.onCreate();
         Log.d("TAG", "LightStart");
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
